@@ -37,3 +37,10 @@ Our web application allows users to input the following information to predict s
 * Item Weight
 * Item MRP
 The application processes this input and provides a sales prediction using the trained XGBoost model, which has been evaluated and selected as the best performing model.
+
+The project uses the Big Mart dataset, which includes detailed information about items and outlets. We have provided both the original dataset and a smaller, cleaned version for experimentation.
+
+
+This project showcases how diverse machine learning techniques can be utilized to solve real-world problems. From data preprocessing to model deployment, each step was meticulously carried out to ensure high performance and accuracy. The experience gained from this project not only highlights my technical skills but also demonstrates my ability to tackle complex challenges and deliver practical solutions in the field of machine learning.
+
+If you have suggestions or would like to contribute to this project, feel free to fork the repository and submit a pull request. Your feedback and contributions are highly appreciated!
