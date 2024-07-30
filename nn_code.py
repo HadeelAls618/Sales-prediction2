@@ -22,3 +22,12 @@ model_NN.compile(loss='mse', optimizer=optimizer, metrics=['mse', 'mae'])
 
 # Train the model
 model_NN.fit(x_train, y_train, epochs=100, batch_size=64)
+
+
+# Compute RMSE from MSE
+from sklearn.metrics import mean_squared_error
+import numpy as np
+y_pred = model_NN.predict(x_test)
+mse = mean_squared_error(y_test, y_pred)
+rmse_NN = np.sqrt(mse)
+print(f'RMSE on test set: {rmse_NN:.3f}')
