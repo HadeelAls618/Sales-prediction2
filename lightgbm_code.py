@@ -28,3 +28,11 @@ best_modelLGBM = random_search.best_estimator_
 
 # Train the model
 best_modelLGBM.fit(x_train, y_train)
+
+# Compute RMSE from MSE
+from sklearn.metrics import mean_squared_error
+import numpy as np
+y_pred = best_modelLGBM.predict(x_test)
+mse = mean_squared_error(y_test, y_pred)
+rmse_LGBMR = np.sqrt(mse)
+print(f'RMSE on test set: {rmse_LGBMR:.3f}')
