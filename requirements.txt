@@ -1,0 +1,10 @@
+pandas
+keras
+scikit-learn
+xgboost
+lightgbm
+lime
+streamlit
+pyngrok
+seaborn
+matplotlib
