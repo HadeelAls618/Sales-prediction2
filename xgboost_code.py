@@ -35,3 +35,18 @@ best_modelXGBR = random_search.best_estimator_
 
 # Train the model
 best_modelXGBR.fit(x_train, y_train)
+
+#evaluate the model
+# Compute RMSE from MSE
+from sklearn.metrics import mean_squared_error
+import numpy as np
+y_pred = best_modelXGBR.predict(x_test)
+mse = mean_squared_error(y_test, y_pred)
+rmse_XGBR = np.sqrt(mse)
+print(f'RMSE on test set: {rmse_XGBR:.3f}')
+
+# saving the best model
+import pickle
+pickle_out = open("Model_XGBR.pkl", mode = "wb")
+pickle.dump(best_modelXGBR, pickle_out)
+pickle_out.close()
