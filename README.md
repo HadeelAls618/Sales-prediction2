@@ -1,6 +1,5 @@
 # Sales Prediction Application
 
-**Overview**
 Welcome to our Sales Prediction Application! 🎉 In this project, we embarked on a journey to accurately forecast sales across various stores using advanced machine learning techniques. Our goal was to develop a robust predictive model capable of estimating sales with high precision, ensuring that businesses can make informed decisions and optimize their operations effectively.
 
 **Problem Statement**
